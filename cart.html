@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="cara.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="new.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar" style="position: sticky; top: 0;">
+            <div class="logo"><img src="logo.png" alt="logo"></div>
+            <div class="navitems">
+                <ul id="nav">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="cart.html" class="active"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                <i id="bar" class="fa-solid fa-bars fa-lg" style="color: #3ee094;"></i>
+            </div>
+        </div>
+
+        <div class="cart-header">
+            <div class="box"></div>
+            <div class="head">
+                <h1>#CART</h1>
+            </div>
+
+        </div>
+
+        <div class="cart-main">
+            <table style="width: 100%;">
+                <thead>
+                    <tr>
+                        <td>Remove</td>
+                        <td>Image</td>
+                        <td>Products</td>
+                        <td>Price </td>
+                        <td>Quantity</td>
+                        <td>CGST 8%</td>
+                        <td>Subtotal</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><i class="fa-regular fa-circle-xmark"></i></td>
+                        <td><img src="t1.jpg" alt=""></td>
+                        <td>Allen Solly Men's Solid</td>
+                        <td id="price">₹399</td>
+                        <td><input type="number" value="1"></td>
+                        <td id="tax">₹31</td>
+                        <td>₹430</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fa-regular fa-circle-xmark"></i></td>
+                        <td><img src="t3.jpg" alt=""></td>
+                        <td>Lux-Cozi Solid Men's T-Shirt</td>
+                        <td id="price">₹359</td>
+                        <td><input type="number" value="1"></td>
+                        <td id="tax">₹28</td>
+                        <td>₹387</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fa-regular fa-circle-xmark"></i></td>
+                        <td><img src="s1.jpg" alt=""></td>
+                        <td>Dennis Solid slim fit Shirt</td>
+                        <td id="price">₹599</td>
+                        <td><input type="number" value="1"></td>
+                        <td id="tax">₹48</td>
+                        <td>₹647</td>
+                    </tr>
+
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <section id="cart-end">
+            <h2>Apply Coupon</h2>
+            <div class="cart-bottom">
+                <div class="bottom-left">
+                    <input type="text" placeholder="Enter Coupon Code">
+                    <button>Apply</button>
+                </div>
+
+                <div class="bottom-right">
+                    <h2>Cart Totals</h2>
+                    <table>
+                        <tr>
+                            <td>Cart Subtotal</td>
+                            <td><b>₹1464</b></td>
+                        </tr>
+                        <tr>
+                            <td>Shipping</td>
+                            <td>Free</td>
+                        </tr>
+                        <tr>
+                            <td><b>Total</b></td>
+                            <td><b>₹1464</b></td>
+                        </tr>
+                    </table>
+                    <button>Proceed to checkout</button>
+                
+                </div>
+            </div>
+        </section>
+
+        <footer class="section-p1">
+            <div class="col">
+                <img src="logo.png" alt="logo" class="logo">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong> 562 Wellington Road,Street 32,San Francisco</p>
+                <p><strong>Phone:</strong>+01 35114 4513/(+91) 881 553 ****</p>
+                <p><strong>Hours:</strong>10:00-18:00 UST,Mon-Fri</p>
+                <div class="socials">
+                    <h4>Follow US</h4>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About US</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="cart.html">View Cart</a>
+                <a href="wishlist.html">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col app">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="play.jpg" alt="">
+                    <img src="app.jpg" alt="">
+                    <p>Secure payment Gateway</p>
+                    <img src="pay.png" alt="">
+                </div>
+            </div>
+        </footer>
+
+        <div class="copyright">
+            <p>2023-24 , HTML CSS Ecommerce Template</p>
+        </div>
+
+    </div>
+</body>

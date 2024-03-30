@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Cara.shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="cara.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="new.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="navbar" style="position: sticky; top: 0;">
+            <div class="logo"><img src="logo.png" alt="logo"></div>
+            <div class="navitems">
+                <ul id="nav">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                <i id="bar" class="fa-solid fa-bars fa-lg" style="color: #3ee094;"></i>
+            </div>
+        </div>
+
+        <section id="prodetails">
+
+            <div class="single-img">
+                <img src="s2.jpg" alt="" width="100%" id="main-img">
+                <div class="small-img-gp">
+                        <div class="small-img-col">
+                            <img src="s2-1.jpg"  width="95%" class="small-img">
+                        </div>
+                
+        
+                        <div class="small-img-col">
+                            <img src="s2-2.jpg"  width="95%" class="small-img">
+                        </div>
+                
+                        <div class="small-img-col">
+                            <img src="s2-3.jpg"  width="95%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="s2-4.jpg"  width="95%" class="small-img">
+                        </div>
+                </div>
+            </div>
+
+            <div class="single-pro-detail">
+                <h6 style="font-size: 16px; font-weight: 400;">Home / t-Shirt</h6>
+                <h4>Lymio
+                Casul Men Shirt</h4>
+                <h2>₹499</h2>
+                <select name="" id="">
+                    <option value="">
+                        Select size
+                    </option>
+                    <option value="">
+                        XL
+                    </option>
+                    <option value="">
+                        L
+                    </option>
+                    <option value="">
+                        M
+                    </option>
+                    <option value="">
+                        S
+                    </option>
+                </select>
+                <span style="line-height: 22px;"><b>XL will fit</b> you best <br>based on data from customers who buy the same sizes as you.</span>
+                <br>
+                <br>
+
+                <input type="number" value="1">
+                <button>Add to Cart</button>
+        
+                <h4>Product Details</h4>
+                <span>
+                    <ul>
+                        <li>Occasion : Casual</li>
+                        <li>Fit : Regular Fit</li>
+                        <li>Material : 60% Cotton and 40% Polyester</li>
+                        <li>Neck : Polo Neck; </li>
+                        <li>Pattern: Solid</li>
+                        <li>Sleeve Type: Half Sleeve </li> 
+                        <li>Closure Type: Button </li>
+                        <li>Style: Band Collar </li>
+                        <li>Material Composition: 60% Cotton, 40% Polyester</li>
+                        <li>Brand: Allen Solly</li>
+                    </ul>
+                </span>
+
+            </div>
+        </section>
+
+        <div class="newsletter">
+            <div class="newstext">
+                <h4>Sign Up For Newsletters</h4>
+                <br>
+                <p>Get E-mail upldates about our latest shop and <span>Special Offers.</span>
+                </p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter Your Email">
+                <button>Sign-Up</button>
+            </div>
+        </div>
+
+        <footer class="section-p1">
+            <div class="col">
+                <img src="logo.png" alt="logo" class="logo">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong> 562 Wellington Road,Street 32,San Francisco</p>
+                <p><strong>Phone:</strong>+01 35114 4513/(+91) 881 553 ****</p>
+                <p><strong>Hours:</strong>10:00-18:00 UST,Mon-Fri</p>
+                <div class="socials">
+                    <h4>Follow US</h4>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About US</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="cart.html">View Cart</a>
+                <a href="wishlist.html">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col app">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="play.jpg" alt="">
+                    <img src="app.jpg" alt="">
+                    <p>Secure payment Gateway</p>
+                    <img src="pay.png" alt="">
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            var mainimg=document.getElementById("main-img");
+            var smallimg=document.getElementsByClassName("small-img");
+
+            smallimg[0].onclick=function(){
+                mainimg.src=smallimg[0].src;
+            }
+            smallimg[1].onclick=function(){
+                mainimg.src=smallimg[1].src;
+            }
+            smallimg[2].onclick=function(){
+                mainimg.src=smallimg[2].src;
+            }
+            smallimg[3].onclick=function(){
+                mainimg.src=smallimg[3].src;
+            }
+        </script>
+
+        <div class="copyright">
+            <p>2023-24 , HTML CSS Ecommerce Template</p>
+        </div>
+    </div>
+</body>
+</html>
